@@ -6,7 +6,9 @@ $(function() {
         for (badge of response.courses.completed) {
           var newBadge = $('<div></div>');
           newBadge.addClass('course');
-          //newBadge.html(badge);
+          var title = $('<h3></h3>');
+          title.text(badge.title);
+          newBadge.append(title);
           $("#badges").append(newBadge);
         }
     }
