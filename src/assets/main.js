@@ -6,8 +6,8 @@ $(function() {
         for (badge of response.courses.completed) {
           var newBadge = $('<div></div>');
           newBadge.addClass('course');
-          newBadge.append(badge);
-          $("#badge").append(newBadge);
+          //newBadge.html(badge);
+          $("#badges").append(newBadge);
         }
     }
   });
