@@ -10,6 +10,7 @@ $(function() {
           title.text(badge.title);
           newBadge.append(title);
           newBadge.append($('<img src = "' + badge.badge + '">'));
+          newBadge.append($('<a href = "' + badge.url + '" target = "_blank class = "btn" class = "btn-primary">See course</a>'))
           $("#badges").append(newBadge);
         }
     }
