@@ -9,6 +9,7 @@ $(function() {
           var title = $('<h3></h3>');
           title.text(badge.title);
           newBadge.append(title);
+          newBadge.append($('<img src = "' + badge.badge + '">'));
           $("#badges").append(newBadge);
         }
     }
